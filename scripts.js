@@ -1,6 +1,6 @@
 const searchForm = document.querySelector('form');
 const searchInput = document.querySelector('#search');
-const results = document.querySelector('#results');
+const resultsList = document.querySelector('#results');
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -10,7 +10,7 @@ searchForm.addEventListener('submit', (e) => {
 
 async function searchRecipes() {
     const searchValue = searchInput.value.trim();
-  const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=8bc9ab94&app_key=
+  const response = await fetch(`https://api.edamam.com/search?q=${searchValue}&app_id=8bc9ab94&app_key=
     a6a486ef066a706a212bb30a093c3a22}`);
   const data = await response.json();
   displayRecipes(data.hits);
@@ -29,7 +29,7 @@ function displayRecipes(recipes) {
         </ul>
         <a href="${recipe.recipe.url}" target="_blank">View Recipe</a>
         </div>
-        '
+    `;
   })
     results.innerHTML = html;
 }
