@@ -39,7 +39,7 @@ body {
     cursor: pointer;
   }
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: #be7c4d;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -50,7 +50,7 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #0069d9;
+    background-color: #92140c;
   }
   
   #results {
