@@ -1,8 +1,9 @@
 const searchForm = document.querySelector('form');
 const searchInput = document.querySelector('#search');
 const resultsList = document.querySelector('#results');
+const ingredientsbutton = document.querySelector('#ingredientsbtn');
 
-searchForm.addEventListener('submit', (e) => {
+ingredientsbutton.addEventListener('click', (e) => {
   e.preventDefault();
   searchRecipes();
 
