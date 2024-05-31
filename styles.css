@@ -1,5 +1,5 @@
 body {
-    background-color: #be7c4d;
+    background-color: #fff;
     font-family: Playfair Display, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -8,16 +8,23 @@ body {
   }
   
   header {
-    background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
   
   h1 {
     color: #92140c;
-    font-size: 32px;
+    background-color: #353238;
+    font-size: 40px;
     margin: 0;
     text-align: center;
+    padding: 25px;
+}
+
+  .img-container {
+    border: #92140c;
+    display: flex;
+    justify-content: center;
   }
   
   form {
@@ -29,10 +36,10 @@ body {
   
   input[type="text"] {
     background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    padding: 12px;
+    border: 2px solid #92140c;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 14px;
     width: 300px;
   }
   .btn {
@@ -42,11 +49,11 @@ body {
     background-color: #be7c4d;
     border: none;
     border-radius: 8px;
-    color: #fff;
+    color: #92140c;
     cursor: pointer;
     font-size: 16px;
     padding: 12px 20px;
-    transition: background-color 0.2s;
+    transition: background-color 0.4s;
   }
   
   button[type="submit"]:hover {
