@@ -12,7 +12,7 @@ ingredientsbutton.addEventListener('click', (e) => {
 async function searchRecipes() {
     const searchValue = searchInput.value.trim();
   const response = await fetch(`https://api.edamam.com/search?q=${searchValue}&app_id=7b1a83fc&app_key=
-  c9d3abbf0c31fd12a8fabc64177fbc5a}`);
+  c9d3abbf0c31fd12a8fabc64177fbc5a`);
   const data = await response.json();
   displayRecipes(data.hits);
   
